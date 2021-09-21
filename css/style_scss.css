@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Обнуление */
 *,
 *::before,
@@ -271,6 +272,11 @@ body {
 .main-block__button_one:hover {
   background-color: #fff;
   color: #ff7b47;
+  -webkit-box-shadow: 1px 1px 0.7px slategrey;
+          box-shadow: 1px 1px 0.7px slategrey;
+  position: relative;
+  top: -0.5px;
+  left: -0.5px;
 }
 
 .main-block__button_two {
@@ -281,6 +287,11 @@ body {
 .main-block__button_two:hover {
   background-color: #0d5c63;
   color: #fff;
+  -webkit-box-shadow: 1px 1px 0.7px slategrey;
+          box-shadow: 1px 1px 0.7px slategrey;
+  position: relative;
+  top: -0.5px;
+  left: -0.5px;
 }
 
 .main-block__image {
@@ -310,13 +321,6 @@ body {
   position: relative;
 }
 
-.services__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px -15px;
-}
-
 @media (min-width: 670px) {
   .services__body {
     display: -webkit-box;
@@ -329,7 +333,6 @@ body {
 }
 
 .services__column {
-  padding: 0px 15px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
@@ -342,7 +345,7 @@ body {
             flex: 0 1 50%;
   }
   .services__column:not(:last-child) {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 25px 0px;
   }
   .services__column:last-child {
     -webkit-box-flex: 1;
@@ -351,9 +354,15 @@ body {
   }
 }
 
+@media (max-width: 670px) {
+  .services__column:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
 @media (min-width: 670px) {
   .services__column {
-    padding: 0px 15px;
+    padding: 0px 14px;
   }
 }
 
@@ -403,15 +412,154 @@ body {
   text-align: left;
 }
 
-.page__advantages {
-  display: none;
-}
-
-.page__practice {
-  display: none;
-}
-
 .page_whoweare {
   display: none;
+}
+
+.advantages {
+  padding: 80px;
+  background-color: #fafafa;
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding: 30px 0px;
+  }
+}
+
+.header-block__header {
+  margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 992px) {
+  .header-block__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.header-block__title {
+  font-size: 40px;
+  line-height: 142%;
+  font-weight: 700;
+}
+
+.header-block__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 992px) {
+  .header-block__title {
+    font-size: 30px;
+  }
+}
+
+.header-block__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142%;
+}
+
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px -30px;
+}
+
+.advantages__column {
+  padding: 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.advantages__column:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+
+@media (max-width: 1000px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.advantages__item {
+  background-color: #fff;
+  padding: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages__item > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 560px) {
+  .advantages__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .advantages__item .advantages__icon {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.advantages__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages__value {
+  font-size: 40px;
+  line-height: 142%;
+}
+
+.advantages__text {
+  letter-spacing: 0.1px;
+  color: #737373;
+  font-size: 16px;
+  line-height: 150%;
 }
 /*# sourceMappingURL=style_scss.css.map */

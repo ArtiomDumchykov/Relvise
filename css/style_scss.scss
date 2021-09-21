@@ -256,6 +256,10 @@ body {
             &:hover {
                 background-color: #fff;
 	            color: #ff7b47;
+                box-shadow:  1px 1px 0.7px slategrey;
+                position: relative;
+                top: -0.5px;
+                left: -0.5px;
             }
         }
         
@@ -265,6 +269,10 @@ body {
                 &:hover {
                     background-color: #0d5c63;
                     color: #fff;
+                    box-shadow:  1px 1px 0.7px slategrey;
+                    position: relative;
+                    top: -0.5px;
+                    left: -0.5px;
             }
         }
     }
@@ -295,14 +303,17 @@ body {
     position: relative;
     
 }
+.services {
+   
+}
 
 .services__container {
 
 }
 
 .services__body {
-    display: flex;
-    margin: 0px -15px;
+    // display: flex;
+    // margin: 0px -15px;
 
     @media (min-width: 670px) {
         & {
@@ -313,23 +324,30 @@ body {
     }
 }
 .services__column {
-    padding: 0px 15px;
+    
     flex: 0 1 33.333%;
     @media (max-width: 992px) {
         & {
             flex: 0 1 50%;
         }
         &:not(:last-child) {
-            margin: 0px 0px 30px 0px;
+            margin: 0px 0px 25px 0px;
         }
         &:last-child {
             flex: 1 1 100%;
         }
     }
+    @media (max-width:670px) {
+        &:not(:last-child) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
     @media (min-width: 670px) {
         & {
-            padding: 0px 15px;
+            
+            padding: 0px 14px;
         }
+        
     }
 }
 .services__item {
@@ -374,4 +392,202 @@ body {
 
 
 }
+//=======================================PAGES ADVANTAGES=======================================
+.page__advantages {
+    
+}
+.advantages__container {
+
+}
+.page__practice {
+    // display: none;
+}
+.practice__container {
+    
+}
+.page_whoweare {
+    display: none;
+}
+.whoweare__container {
+
+}
+//============================================ADVANTAGES================================================
+.advantages {
+  padding: 80px; 
+  background-color: #fafafa;
+  @media (max-width:992px) {
+        & {
+            padding: 50px 0px;
+        }
+    }
+  @media (max-width:767px) {
+        & {
+            padding: 30px 0px;
+        }
+    }
+}
+
+.header-block__header {
+    margin: 0px 0px 50px 0px;
+    @media (max-width: 992px) {
+        & {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+}
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+}
+.header-block__title {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: 700;
+    &:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+    @media (max-width: 992px) {
+        font-size: 30px;
+    }
+}
+.header-block__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 142%;
+}
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+    
+}
+.advantages__column {
+    padding: 0px 15px;
+    &:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+   }
+    flex: 0 1 25%;
+    @media (max-width:1000px) {
+       flex: 0 1 50%; 
+    }
+    @media (max-width:560px) {
+       flex: 0 1 100%; 
+    //    justify-content: center;
+    //    align-items: center;
+    }
+}
+.advantages__item {
+    background-color: #fff;
+	padding: 30px;
+	font-weight: 700;
+	text-align: center;
+     & > *:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+     }
+     @media (max-width: 560px) {  
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content:space-around; 
+            }       
+            .advantages__icon {
+                align-self: flex-end;
+                 
+             }
+     }
+}
+
+.advantages__icon {
+    display: flex;
+    align-items: flex-end;
+    height: 48px;
+    justify-content: center;
+}
+.advantages__value, .advantages__text {
+    
+}
+.advantages__value {
+    font-size: 40px;
+    line-height: 142%;
+    
+    
+}
+.advantages__text {
+    letter-spacing: 0.1px;
+	color: #737373;
+	font-size: 16px;
+	line-height: 150%;
+}
+//=========================================PRACTICE=======================================
+.header-block__sub-title {
+
+}
+.practice__body {
+
+}
+.practice__column {
+
+}
+.practice__item {
+
+}
+.item-practice__content {
+
+}
+.item-practice__link {
+
+}
+.item-practice__title {
+
+}
+.item-practice__text {
+
+}
+.item-practice_image {
+
+}
+//=========================================WHO WE ARE=======================================
+.whoweare__header {
+
+}
+.whoweare__body {
+
+}
+.whoweare__video {
+
+}
+.whoweare__content {
+
+}
+.whoweare__top {
+
+}
+.whoweare__title {
+
+}
+.whoweare__text {
+
+}
+.whoweare__items {
+
+}
+.whoweare__item {
+
+}
+.item-whoweare__icon {
+
+}
+.item-whoweare__body {
+
+}
+.item-whoweare__title {
+
+}
+.item-whoweare__text {
+
+}
+
 //======================================FOOTER==============================================
